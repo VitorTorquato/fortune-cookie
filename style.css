@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Dancing+Script&family=Montserrat:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    height: 100vh;
+
+    display: grid;
+    place-items: center;
+
+    font-size: 1.6rem;
+    font-family: 'DM Sans' ,sans-serif;
+    
+    
+}
+
+
+
+
+.hide{
+    display: none;
+}
+
+main{
+    width: min (42.8rem 90%);
+    height: max-content;
+    margin-top: -1.2rem;
+    padding: 4.8rem 6.4rem;
+
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+    text-align: center;
+}
+
+   
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #34355B;
+    font-family: 'Montserrat' ,sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    display: inline-block;
+
+    width: 25.8rem;
+    text-align: center;
+}
+
+.screen1 p{
+    margin-top: 1.4rem;
+    color: #34355B;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.screen1 button{
+    margin-top: 2.8rem;
+  
+}
+
+.screen1 button:hover{
+    animation: shaking 0.3s;
+    animation-iteration-count: infinite;
+    
+    cursor: pointer;
+}
+button{
+    border: none;
+    background-color: #FFF;
+
+    width: 30rem;
+    height: 20rem;
+
+    
+
+}
+
+/*screen 2*/
+
+.screen2{
+    width: 30rem;
+    align-items: center;
+    
+}
+
+
+
+.screen2 #message{
+    margin-top:1.7rem ;
+    height: 10.8rem;
+    padding: 1rem;
+   
+
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+
+    animation: slide-in-fwd-bottom 1.5s ease-out;
+
+
+}
+
+.screen2 .opened-cookie{
+    margin-top: 1.7rem;
+    padding: 4.2rem 0;
+}
+
+.screen2 #message{
+   display: flex; 
+   
+}
+
+#message p{
+    margin: auto;
+    color: #000;
+    font-family: 'Dancing Script' , sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.screen2 button{
+    width: 17.4rem;
+    height: 5.2rem;
+    background-color:#FF9500;
+    border-radius: .4rem;
+    padding: 1.6rem;
+    margin-top: 1.7rem;
+    
+    
+
+
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 1.5rem;
+    font-weight: 700;
+    }
+
+    .screen2 button:hover{
+        background-color: #eb9011;
+    }
+
+    @keyframes shaking {
+        0% {
+            -webkit-transform: translate(0);
+                    transform: translate(0);
+          }
+         
+          50% {
+            -webkit-transform: translate(-2px, -2px);
+                    transform: translate(-2px, -2px);
+          }
+          100% {
+            -webkit-transform: translate(0);
+                    transform: translate(0);
+          }
+    }
+    
+    @keyframes slide-in-fwd-bottom {
+        0% {
+          -webkit-transform: translateY(180px) scale(0.05);
+                  transform: translateY(180px) scale(0.05);
+        }
+        100%{
+          -webkit-transform:translateY(0);
+                  transform:translateY(0);
+          opacity: 1;
+        }
+      }
