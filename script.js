@@ -13,7 +13,10 @@ let openCookieMessage = [
         "Patience is power",
         "Better days are on the way, just wait",
         "Alone can be beautiful",
-        "A good life need some bad days too"
+        "A good life need some bad days too",
+        "When you change your thoughts, remember to also change your world.",
+        "It is better to fail in originality than to succeed in imitation.",
+        "Do not let yesterday take up too much of today."
 ]
 
 //events
